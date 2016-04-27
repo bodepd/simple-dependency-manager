@@ -2,21 +2,20 @@ require 'fileutils'
 require 'rubygems/package'
 require 'zlib'
 require 'open-uri'
-require 'librarian/puppet/simple/util'
-require 'librarian/puppet/simple/iterator'
+require 'bodepd/simple/util'
+require 'bodepd/simple/iterator'
 
 # This is an extremely simple file that can consume
 # a Puppet file with git references
 #
 # It does absolutely no dependency resolution by design.
 #
-module Librarian
-  module Puppet
+module Bodepd
     module Simple
       module Installer
 
-        include Librarian::Puppet::Simple::Util
-        include Librarian::Puppet::Simple::Iterator
+        include Bodepd::Simple::Util
+        include Bodepd::Simple::Iterator
 
         # installs modules using the each_module method from our
         # iterator mixin
@@ -109,5 +108,4 @@ module Librarian
         end
       end
     end
-  end
 end

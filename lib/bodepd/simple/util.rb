@@ -2,8 +2,7 @@
 # this module contains all of the base helper methods
 # used by the other actions
 #
-module Librarian
-  module Puppet
+module Bodepd
     module Simple
       module Util
 
@@ -47,5 +46,4 @@ module Librarian
 
       end
     end
-  end
 end

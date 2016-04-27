@@ -1,18 +1,16 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-require 'librarian/puppet/simple/version'
+require 'bodepd/simple/version'
 
 Gem::Specification.new do |s|
-  s.name = 'librarian-puppet-simple'
-  s.version = Librarian::Puppet::Simple::VERSION
+  s.name = 'simple-depdency-manager'
+  s.version = Bodepd::Simple::VERSION
   s.platform = Gem::Platform::RUBY
   s.authors = ['Dan Bode']
   s.email = ['bodepd@gmail.com']
-  s.homepage = 'https://github.com/bodepd/librarian-puppet-simple'
-  s.summary = 'Bundler for your Puppet modules'
-  s.description = 'Simplify deployment of your Puppet infrastructure by
-  automatically pulling in modules from the forge and git repositories with
-  a single command.'
+  s.homepage = 'https://github.com/bodepd/simple-dependency-manager'
+  s.summary = 'Language agnostic dependency file'
+  s.description = 'Simply grabs things from a Dependencies file and installs them. Simple.'
 
   s.files         = `git ls-files`.split($/)
   s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }

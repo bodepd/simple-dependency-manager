@@ -1,7 +1,6 @@
-require 'librarian/puppet/simple/util'
+require 'bodepd/simple/util'
 
-module Librarian
-  module Puppet
+module Bodepd
     module Simple
       module Iterator
 
@@ -52,5 +51,4 @@ module Librarian
 
       end
     end
-  end
 end
