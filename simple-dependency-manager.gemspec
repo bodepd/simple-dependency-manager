@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require 'bodepd/simple/version'
 
 Gem::Specification.new do |s|
-  s.name = 'simple-depdency-manager'
+  s.name = 'simple-dependency-manager'
   s.version = Bodepd::Simple::VERSION
   s.platform = Gem::Platform::RUBY
   s.authors = ['Dan Bode']
